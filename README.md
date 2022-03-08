@@ -39,7 +39,6 @@
 
 <div align="center" id="top"> 
   <img src="./public/PokeReal_Dex_screen.png" alt="PokeReal Dex" />
-  <!-- <a href="https://covid_dashboard.netlify.com">Demo</a> -->
 </div>
 
 ## :dart: Sobre ##
