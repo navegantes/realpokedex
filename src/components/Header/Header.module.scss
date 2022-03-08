@@ -1,0 +1,39 @@
+.headerContent {
+  // position: -webkit-sticky;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #EA5D60;
+  color: #EED535;
+  margin-top: 0px;
+  
+  div {
+    margin-left: 40px;
+
+    h1{
+      font-size: 38px;
+      font-weight: bold;
+      // margin: 6px 0px 0px;
+      // -webkit-text-fill-color: #EED535;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #3B5D94;
+    }
+    
+    > p {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0px 20px 5px;
+      -webkit-text-stroke-width: 1.2px;
+      -webkit-text-stroke-color: #3B5D94;
+    }
+    
+  }
+}
+
+.gbifLogo {
+  margin-right: 30px;
+}

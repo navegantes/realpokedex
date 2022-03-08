@@ -1,0 +1,27 @@
+.loadingContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  // border: 1px solid lime;
+
+  span {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+
+.imgBall {
+  width: 100%;
+  height: 100%;
+  animation: load 2s linear infinite;
+  filter: invert(60%) sepia(75%) saturate(321%) hue-rotate(154deg) brightness(76%) contrast(84%);
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}

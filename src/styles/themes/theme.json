@@ -1,0 +1,68 @@
+{
+  "name": "Zioncord - Central de Controle Zion.",
+  "theme": {
+    "taxonColors": [
+      "#6F6E78",
+      "#F78551",
+      "#8571BE",
+      "#B5B9C4",
+      "#58ABF6",
+      "#FF6568",
+      "#8BBE8A",
+      "#EBA8C3",
+      "#9F6E97"
+    ],
+    "taxons": {
+      "incertae sedis": "#6F6E78",
+      "Animalia":       "#F78551",
+      "Archea":         "#8571BE",
+      "Bacteria":       "#B5B9C4",
+      "Chromista":      "#58ABF6",
+      "Fungi":          "#FF6568",
+      "Plantae":        "#8BBE8A",
+      "Protozoa":       "#EBA8C3",
+      "Viruses":        "#9F6E97"
+    },
+    "colors": {
+      "primary": {
+        "050": "#E3F9E5",
+        "100": "#C1EAC5",
+        "200": "#A3D9A5",
+        "300": "#7BC47F",
+        "400": "#57AE5B",
+        "500": "#3F9142",
+        "600": "#2F8132",
+        "700": "#207227",
+        "800": "#0E5814",
+        "900": "#05400A"
+      },
+      "neutrals": {
+        "000": "#FFFFFF",
+        "050": "#F5F7FA",
+        "100": "#E4E7EB",
+        "200": "#CBD2D9",
+        "300": "#9AA5B1",
+        "400": "#52667A",
+        "500": "#313D49",
+        "600": "#29333D",
+        "700": "#212931",
+        "800": "#181F25",
+        "900": "#101418",
+        "999": "#080A0C"
+      },
+      "light": {
+        "00": "#ecfbfe",
+        "01": "#e9e6ff",
+        "bs0": "12px 12px 24px #d0dde0, -12px -12px 24px #ffffff",
+        "bs00": "6px 6px 6px #d0dde0, -6px -6px 6px #ffffff",
+        "bs1": "inset 8px 8px 10px #deecef, inset -8px -8px 10px #faffff",
+        "bs2": "inset 10px 10px 14px #deecef, inset -10px -10px 14px #faffff, 6px 6px 8px #d9e7ea, -6px -6px 8px #ffffff",
+        "scrl": "#CBD2D9 #ecfbfe"
+      },
+      "dark": {
+        "00": "#2B3D41",
+        "01": "#364159"
+      }
+    }
+  }
+}

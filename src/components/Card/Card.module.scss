@@ -1,0 +1,135 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 510px;
+  margin: 10px;
+  padding: 6px 0px 0px;
+  border-radius: 10px;
+  // border: 2px solid cadetblue;
+  z-index: 0;
+  // background-color: #B7B9D0;
+  // background-color: #B7B9D0;
+  background-color: #B7B9D0;
+  border-left: 10px solid cadetblue;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    width: 18em; //300px;
+    height: 18em;
+    background-image: url('../../assets/patterns/pokeball_rot.svg');
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 100%;
+    z-index: 1;
+    filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(37deg) brightness(108%) contrast(101%) opacity(20%);
+    // border: 2px solid lime;
+  }
+
+  &:hover {
+    border-left: 10px solid #e847ee;
+  }
+
+  .cardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    // border: 2px solid red;
+    
+    .imgCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      margin: 0px auto;
+      align-self: center;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 95%;
+      height: 240px;
+      background-color: #67686ea6;
+      border: 3px solid #67686ea6;
+      
+      img {
+        position: relative;
+        width: auto;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        
+        &:hover {
+          transform: scale(.95);
+          object-fit: contain;
+        }
+      }
+      
+      figcaption {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        font-size: 1rem;
+        background: #46464680;
+        color: white;
+        padding-left: 10px;
+        // border: 2px solid lime;
+      }
+    }
+    
+    .midCard {
+      width: 95%;
+      height: auto;
+      font-size: 1.2rem;
+      // border: 2px solid blue;
+    }
+  }
+
+  .taxonInfos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #dae3f5a9;
+    // margin-top: 10px;
+    z-index: 2;
+    border-radius: 26px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    // border: 2px solid red;
+
+    div {
+      display: inline-flex;
+      align-items: baseline;
+      
+    // border: 2px solid blue;
+    }
+
+    dt {
+      display: inline;
+      font-size: 14px;
+
+      &:after {
+        content: ':';
+        margin: 0px 5px;
+      }
+    }
+
+    dd {
+      font-size: 12px;
+    }
+  }
+}
