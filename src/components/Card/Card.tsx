@@ -1,28 +1,28 @@
-import styles from './Card.module.scss'
-import Plantae from '../../assets/Badges/Plantae.svg'
-import themes from '../../styles/themes/theme.json'
-import { TiLocation } from 'react-icons/ti'
+import styles from "./Card.module.scss";
+import Plantae from "../../assets/Badges/Plantae.svg";
+import themes from "../../styles/themes/theme.json";
+import { TiLocation } from "react-icons/ti";
 
-import { GBIFType } from '../../@types/apiTypes'
-import { taxonBadges } from '../Badges';
+import { GBIFType } from "../../@types/apiTypes";
+import { taxonBadges } from "../Badges";
 
 // <h3>{occurrence.media[0].creator}</h3>
 
-export function Card(props: { item: GBIFType }){
+export function Card(props: { item: GBIFType }) {
   const { item } = props;
   const wrapper = {
     borderLeft: "10px solid cadetblue",
-  }
+  };
 
-  return(
+  return (
     <div
-        key={item.key}
-        className={styles.card}
-        style={{
-          backgroundColor: themes.theme.taxonColors[item.kingdomKey]
-        }}
-        // style={item.class==='Insecta'?wrapper:{}}
-        // style={wrapper}
+      key={item.key}
+      className={styles.card}
+      style={{
+        backgroundColor: themes.theme.taxonColors[item.kingdomKey],
+      }}
+      // style={item.class==='Insecta'?wrapper:{}}
+      // style={wrapper}
     >
       <div
         className={styles.cardWrapper}
@@ -30,30 +30,36 @@ export function Card(props: { item: GBIFType }){
       >
         <figure className={styles.imgCard}>
           <img
+            className={styles.showcaseImg}
             src={item.media[0].identifier}
             alt="Imagem ilustrativa"
           />
-          <figcaption>{item.scientificName}</figcaption>
+          <figcaption className={styles.figcaption}>
+            {item.scientificName}
+          </figcaption>
+          <img
+            className={styles.badgeKingdom}
+            src={taxonBadges[item.kingdomKey]}
+            alt="Grass type"
+          />
         </figure>
 
-        <div className={styles.midCard} >
-          <TiLocation size={18}/>
-          <span>Belém, PA, Brasil</span>
+        <div className={styles.midCard}>
+          <TiLocation size={18} />
+          <span>{item?.gadm?.level2?.name}, </span>
+          <span>{item?.gadm?.level1?.name ?? item?.locality}, </span>
+          <span>{item?.gadm?.level0?.name ?? item?.country}</span>
         </div>
-        {/* <img src={Plantae} alt="Grass type" height={24} /> */}
 
-        <dl
-          className={styles.taxonInfos}
-        >
+        <dl className={styles.taxonInfos}>
+          <div key="kin">
+            <dt>BasisOfRecord</dt>
+            {/* <dd>{item.kingdom}</dd> */}
+            <dd>{item.basisOfRecord}</dd>
+          </div>
           <div key="kin">
             <dt>Kingdom</dt>
-            {/* <dd>{item.kingdom}</dd> */}
-            <dd>
-              <img
-                src={taxonBadges[item.kingdomKey]}
-                alt="Grass type"
-                height={18} />
-            </dd>
+            <dd>{item.kingdom}</dd>
           </div>
           <div key="phy">
             <dt>Phylum</dt>
@@ -75,26 +81,28 @@ export function Card(props: { item: GBIFType }){
             <dt>Species</dt>
             <dd>{item.species ? item.species : item.scientificName}</dd>
           </div>
-          <div key="kk">
+          <div key="vn">
+            <dt>Vernacular Name:</dt>
+            <dd>{item.vernacularName}</dd>
+          </div>
+          {/* <div key="kk">
             <dt>KingdomKey</dt>
             <dd>{item.kingdomKey}</dd>
-          </div>
-        </dl>
-        <dl
-        className={styles.taxonInfos}
-        >
-          <div>
+          </div> */}
+          {/* <div>
             <dt>Recorded by</dt>
             <dd>{item.recordedBy}</dd>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <dt>Country</dt>
             <dd>{item.country}</dd>
           </div>
-          <div>
-            <dt>State</dt>
-            <dd>{item.stateProvince}</dd>
-          </div>
+          {item.stateProvince && (
+            <div>
+              <dt>State</dt>
+              <dd>{item.stateProvince}</dd>
+            </div>
+          )} */}
           {/* <div>
             <dt>Right Holder</dt>
             <dd>{item.media[0].rightsHolder}</dd>
@@ -106,5 +114,5 @@ export function Card(props: { item: GBIFType }){
         </dl>
       </div>
     </div>
-  )
+  );
 }

@@ -7,8 +7,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #EA5D60;
-  color: #EED535;
+  background-color: #f02f2f;// #EA5D60;
+  color: #ffcc00; //#EED535;
   margin-top: 0px;
   
   div {
@@ -20,7 +20,7 @@
       // margin: 6px 0px 0px;
       // -webkit-text-fill-color: #EED535;
       -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #3B5D94;
+      -webkit-text-stroke-color: #0684d3;
     }
     
     > p {
@@ -28,7 +28,7 @@
       font-weight: bold;
       margin: 0px 20px 5px;
       -webkit-text-stroke-width: 1.2px;
-      -webkit-text-stroke-color: #3B5D94;
+      -webkit-text-stroke-color: #0684d3;
     }
     
   }
