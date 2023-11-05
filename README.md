@@ -1,4 +1,3 @@
-
 <h1 align="center">Realpokedex</h1>
 
 <p align="center">
@@ -19,9 +18,9 @@
 
 <!-- Status -->
 
-<h4 align="center"> 
+<!-- <h4 align="center">
 	🚧  PokeReal:dex 🚀 Em construção...  🚧
-</h4> 
+</h4>  -->
 
 <hr>
 
@@ -41,17 +40,18 @@
   <img src="./public/PokeReal_Dex_screen.png" alt="PokeReal Dex" />
 </div>
 
-## :dart: Sobre ##
+## :dart: Sobre
 
-Sobre o seu projeto
+O clássico projeto da Pokedex como você nunca viu.
+A PokeReal:Dex traz toda a biodiversidade disponível através da base de dados da [GBIF](https://www.gbif.org/developer/summary).
 
-## :sparkles: Funcionalidades ##
+## :sparkles: Funcionalidades
 
 :heavy_check_mark: Funcionalidade 1;\
 :heavy_check_mark: Funcionalidade 2;\
 :heavy_check_mark: Funcionalidade 3;
 
-## :rocket: Tecnologias ##
+## :rocket: Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -61,11 +61,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Sass](https://sass-lang.com/)
 - [GBIF API](https://www.gbif.org/developer/summary)
 
-## :white_check_mark: Pré requisitos ##
+## :white_check_mark: Pré requisitos
 
 Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados em sua maquina.
 
-## :checkered_flag: Começando ##
+## :checkered_flag: Começando
 
 ```bash
 # Clone este repositório
@@ -83,10 +83,9 @@ $ yarn start
 # O app vai inicializar em <http://localhost:3000>
 ```
 
-## :memo: Licença ##
+## :memo: Licença
 
 Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 
 Feito com :heart: por <a href="https://github.com/navegantes" target="_blank">Raphael Navegantes</a>
 

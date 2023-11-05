@@ -21,6 +21,7 @@ export function MainContent() {
       params: {
         q: searchTerm,
         mediaType: "StillImage",
+        occurrence_status: "present",
         limit: "40",
       },
     };

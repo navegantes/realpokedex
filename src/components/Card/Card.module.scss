@@ -9,7 +9,7 @@
   border-radius: 10px;
   z-index: 0;
   background-color: #b7b9d0;
-  border: 10px solid #0684d3;
+  border: 6px solid #0684d3;
   border-left: 10px solid #0684d3; //cadetblue;
 
   &::before {
@@ -30,7 +30,8 @@
   }
 
   &:hover {
-    border: 10px solid #4efa6b;
+    border: 6px solid #4efa6b;
+    border-left: 10px solid #4efa6b;
   }
 
   .cardWrapper {
@@ -105,14 +106,6 @@
       width: 95%;
       height: auto;
       font-size: 1.2rem;
-
-      // &::before,
-      // &::after {
-      //   content: "";
-      //   border: 2px solid red;
-      //   width: auto;
-      //   border-radius: 50%;
-      // }
     }
   }
 
@@ -124,10 +117,7 @@
     padding: 8px;
     background-color: #dae3f5a9;
     z-index: 2;
-    // border-top-left-radius: 0px;
     border-top-right-radius: 20px;
-    // border-bottom-left-radius: 0px;
-    // border-bottom-right-radius: 6px;
 
     div {
       display: inline-flex;

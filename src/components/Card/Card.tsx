@@ -52,7 +52,7 @@ export function Card(props: { item: GBIFType }) {
         </div>
 
         <dl className={styles.taxonInfos}>
-          <div key="kin">
+          <div key="bor">
             <dt>BasisOfRecord</dt>
             {/* <dd>{item.kingdom}</dd> */}
             <dd>{item.basisOfRecord}</dd>
@@ -82,35 +82,9 @@ export function Card(props: { item: GBIFType }) {
             <dd>{item.species ? item.species : item.scientificName}</dd>
           </div>
           <div key="vn">
-            <dt>Vernacular Name:</dt>
+            <dt>Vernacular Name</dt>
             <dd>{item.vernacularName}</dd>
           </div>
-          {/* <div key="kk">
-            <dt>KingdomKey</dt>
-            <dd>{item.kingdomKey}</dd>
-          </div> */}
-          {/* <div>
-            <dt>Recorded by</dt>
-            <dd>{item.recordedBy}</dd>
-          </div> */}
-          {/* <div>
-            <dt>Country</dt>
-            <dd>{item.country}</dd>
-          </div>
-          {item.stateProvince && (
-            <div>
-              <dt>State</dt>
-              <dd>{item.stateProvince}</dd>
-            </div>
-          )} */}
-          {/* <div>
-            <dt>Right Holder</dt>
-            <dd>{item.media[0].rightsHolder}</dd>
-          </div>
-          <div>
-            <dt>Family</dt>
-            <dd>{item.media[0].type}</dd>
-          </div> */}
         </dl>
       </div>
     </div>
